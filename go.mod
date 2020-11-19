@@ -1,4 +1,4 @@
-module github.com/fsouza/go-dockerclient
+module github.com/silentred/go-dockerclient
 
 go 1.14
 
