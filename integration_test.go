@@ -81,7 +81,7 @@ func pullImage(t *testing.T) string {
 		os = "linux"
 	}
 	platform := os + "/" + runtime.GOARCH
-	imageName := "fsouza/go-dockerclient-integration:" + os
+	imageName := "silentred/go-dockerclient-integration:" + os
 	var buf bytes.Buffer
 	pullOpts := PullImageOptions{
 		Repository:   imageName,

@@ -1,7 +1,7 @@
 # go-dockerclient
 
-[![Build Status](https://github.com/fsouza/go-dockerclient/workflows/Build/badge.svg)](https://github.com/fsouza/go-dockerclient/actions?query=branch:main+workflow:Build)
-[![GoDoc](https://img.shields.io/badge/api-Godoc-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/fsouza/go-dockerclient)
+[![Build Status](https://github.com/silentred/go-dockerclient/workflows/Build/badge.svg)](https://github.com/silentred/go-dockerclient/actions?query=branch:main+workflow:Build)
+[![GoDoc](https://img.shields.io/badge/api-Godoc-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/silentred/go-dockerclient)
 
 This package presents a client for the Docker remote API. It also provides
 support for the extensions in the [Swarm API](https://docs.docker.com/swarm/swarm-api/).
@@ -28,7 +28,7 @@ go-dockerclient lags behind the official SDK.
 When using the official SDK, keep in mind that because of how the its
 dependencies are organized, you may need some extra steps in order to be able
 to import it in your projects (see
-[#784](https://github.com/fsouza/go-dockerclient/issues/784) and
+[#784](https://github.com/silentred/go-dockerclient/issues/784) and
 [moby/moby#28269](https://github.com/moby/moby/issues/28269)).
 
 ## Example
@@ -39,7 +39,7 @@ package main
 import (
 	"fmt"
 
-	docker "github.com/fsouza/go-dockerclient"
+	docker "github.com/silentred/go-dockerclient"
 )
 
 func main() {
@@ -74,7 +74,7 @@ package main
 import (
 	"fmt"
 
-	docker "github.com/fsouza/go-dockerclient"
+	docker "github.com/silentred/go-dockerclient"
 )
 
 func main() {
@@ -100,7 +100,7 @@ package main
 import (
 	"fmt"
 
-	docker "github.com/fsouza/go-dockerclient"
+	docker "github.com/silentred/go-dockerclient"
 )
 
 func main() {
@@ -131,7 +131,7 @@ dependencies.
 go-dockerclient supports Go modules.
 
 If you're using dep, you can check the [releases
-page](https://github.com/fsouza/go-dockerclient/releases) for the latest
+page](https://github.com/silentred/go-dockerclient/releases) for the latest
 release fully compatible with dep.
 
 With other vendoring tools, users need to specify go-dockerclient's
@@ -145,7 +145,7 @@ compiling go-dockerclient with Go 1.4), the tag name is ``docker-1.9/go-1.4``.
 The instructions below can be used to get a version of go-dockerclient that compiles with Go 1.4:
 
 ```
-% git clone -b docker-1.9/go-1.4 https://github.com/fsouza/go-dockerclient.git $GOPATH/src/github.com/fsouza/go-dockerclient
+% git clone -b docker-1.9/go-1.4 https://github.com/silentred/go-dockerclient.git $GOPATH/src/github.com/silentred/go-dockerclient
 % git clone -b v1.9.1 https://github.com/docker/docker.git $GOPATH/src/github.com/docker/docker
-% go get github.com/fsouza/go-dockerclient
+% go get github.com/silentred/go-dockerclient
 ```
